@@ -1,0 +1,12 @@
+Template for the .env file
+Create a .env file in the root directory
+and copy everything from here into it.
+Assign your values properly.
+
+### 
+RabbitMQ Credentials for production 
+For the ManagementUI
+###
+
+RABBITMQ_DEFAULT_USER=
+RABBITMQ_DEFAULT_PASS=
