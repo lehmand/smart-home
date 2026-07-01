@@ -1,6 +1,3 @@
 services:
     rabbitmq:
-        volumes:
-            - ./rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf
-        environment:
-            RABBITMQ_CONFIG_FILE: /etc/rabbitmq/rabbitmq.conf
+        env_file: .env.dev
