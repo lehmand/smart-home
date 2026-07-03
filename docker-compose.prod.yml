@@ -1,4 +1,6 @@
 services:
+    sensors_api:
+
     rabbitmq:
         environment:
             RABBITMQ_DEFAULT_USER: ${RABBITMQ_DEFAULT_USER}

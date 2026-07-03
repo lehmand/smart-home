@@ -1,10 +1,11 @@
 services:
+  sensors_api:
+    build:
+      context: .
+      dockerfile: src/Services/Sensors/Sensors.API/Dockerfile
 
   rabbitmq:
     image: rabbitmq:4.3-management
     container_name: rabbitmq
     hostname: rabbitmq
     restart: always
-    ports:
-      - "5672:5672"
-      - "15672:15672"    
