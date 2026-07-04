@@ -9,3 +9,14 @@ services:
     container_name: rabbitmq
     hostname: rabbitmq
     restart: always
+
+  sensors_postgres:
+    image: postgres
+    restart: always
+    container_name: sensors_postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: test
+      POSTGRES_USER: test
+      POSTGRES_PASSWORD: test

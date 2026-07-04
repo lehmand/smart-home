@@ -8,3 +8,11 @@ services:
         ports:
             - 5672:5672
             - 15672:15672
+
+    postgres_sensors:
+        ports:
+            - 5432:5432
+        environment:
+            POSTGRES_DB: test
+            POSTGRES_USER: test
+            POSTGRES_PASSWORD: test
