@@ -1,7 +1,15 @@
 services:
     sensors_api:
+        environment:
+            ASPNETCORE_ENVIRONMENT: Production
 
     rabbitmq:
         environment:
             RABBITMQ_DEFAULT_USER: ${RABBITMQ_DEFAULT_USER}
             RABBITMQ_DEFAULT_PASS: ${RABBITMQ_DEFAULT_PASS}
+
+    postgres_sensors:
+        environment:
+            POSTGRES_DB: ${POSTGRES_DB}
+            POSTGRES_USER: ${POSTGRES_USER}
+            POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
